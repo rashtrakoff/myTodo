@@ -1,0 +1,123 @@
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-image{
+  background-image: url("Notebook_Background.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(5px);
+}
+
+.flex-container{
+  background-color: rgba(0, 0, 0, 0.025); 
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  height: 80%;
+  padding: 10px 40px;
+  flex-flow: column wrap;
+  border-radius: 30px;
+}
+
+.flex-container h1{
+  text-align: center;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container li{
+  text-align: start;
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+}
+
+#input1{
+  font-weight: lighter;
+  border: 0.5px black;
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  width: 40%;
+  text-align: center;
+  outline: none;
+  transform: scale(1.35);
+}
+
+#input1:focus{
+  transform: scale(2);
+  transition-duration: 200ms;
+}
+
+#input1:focus::placeholder{
+  opacity: 0;
+}
+
+/*#input1:hover{
+  transform: scale(2);
+  transition-duration: 200ms;
+}
+
+#input1:hover::placeholder{
+  opacity: 0;
+}*/
+
+#date{
+  text-align: center;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+#info ul{
+  margin: 0;
+  padding: 0;
+}
+
+#info ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 10px 8px 10px 20px;
+  list-style-type: none;
+  background: white;
+  font-size: 18px;
+  border-radius: 20px;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#info ul li:hover{
+  background: transparent;
+}
+
+#info ul li.checked{
+  background: transparent;
+  color: black;
+  text-decoration: line-through;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  transform: scale(1.25)
+}
+
+
+  
